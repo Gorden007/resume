@@ -5,7 +5,6 @@
 
 }
 body{background-color: black;
-color: white;
 margin: 0px;}
 
 .topNavBar{
@@ -77,3 +76,6 @@ font-family: "Arial Black";
 }
 .topNavBar .logo .card{font-size: 24px; 
     font-family: "Arial Black";} */
+.div{font-size: 14px;
+height: 30px;
+}
