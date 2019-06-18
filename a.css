@@ -4,14 +4,22 @@
     clear:both;
 
 }
-body{background-color: black;
+body{background-color: #efefef;
 margin: 0px;}
 
 .topNavBar{
     padding-top: 20px; 
     padding-bottom: 20px; 
-    padding-left: 16px;
-    padding-right: 16px;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+}
+.topNavBar .topNavBar-inner{
+ padding: 0px 16px;
 
 }
 .topNavBar nav{
@@ -19,7 +27,7 @@ margin: 0px;}
     padding-bottom: 0px;
 
 }
-.topNavBar>nav>ul{
+.topNavBar nav>ul{
    list-style: none; 
    margin: 0px;
    padding: 0px;
@@ -29,13 +37,13 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.topNavBar>nav>ul>li{
-     float: left;
+.topNavBar nav>ul>li{
+    float: left;
     margin-left: 17px;
     margin-right: 17px; 
     /* border: 1px solid yellow; */
     }
-.topNavBar>nav>ul>li>a{
+.topNavBar nav>ul>li>a{
     
     font-size: 12px;
     color: #B7B7B7;
@@ -50,7 +58,7 @@ a{
 
     
     }
-.topNavBar>nav>ul>li>a:hover{
+.topNavBar nav>ul>li>a:hover{
 border-bottom: 3px solid #e06567;
 padding-bottom: 5px;
 padding-top: 5px;
@@ -79,3 +87,63 @@ font-family: "Arial Black";
 .div{font-size: 14px;
 height: 30px;
 }
+.banner{
+    height: 515px; 
+
+    background-position: center center;
+    /* 上面为垂直居中 下面为自适应 */
+    background-size: cover
+
+}
+
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.userCard{
+    border: 1px solid red;
+    max-width: 940px;
+    /* 居中  */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+.userCard .picAndText{
+    padding: 50px;
+}
+.userCard .picAndText .picture{
+    float: left;
+}
+.userCard .picAndText .text{
+    float: left; 
+    margin-left: 65px;
+    width: 470px;
+}
+.userCard .picAndText .text .welcome{
+background-color: #e6686a;
+color: white;
+padding: 4px 16px;
+/* 不同浏览器机器 会造成ling-heigh不同 所以写一个值 */
+line-height: 22px;
+position: relative;
+}
+.userCard .picAndText .text .welcome .triangle{
+    display: block;
+    border: 10px solid transparent;
+    width: 0px;
+    border-left-color: #e6686a; 
+
+    border-top-width: 0px;
+    position: absolute;
+    left: 4px;
+    top: 100%;
+}
+.userCard .text dl dt,
+.userCard .text dl dd{
+    float: left;
+    
+
+}
+
+.userCard .text dl dd{width: 45%}
+.userCard .text dl dd{width: 55%}
