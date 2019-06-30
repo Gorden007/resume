@@ -85,34 +85,55 @@
                 <h2>技能</h2>
                 <ol class="clearfix">
                     <li><h3>HTML 5 & CSS 3</h3>
-                        <div class="progress"><div class="progressBar"></div></div>
+                        <div class="progress"><div class="progressBar" style="width: 10%"></div></div>
                           </li>
                     <li><h3>JavaScript</h3>
-                        <div class="progress"><div class="progressBar"></div></div>
+                        <div class="progress"><div class="progressBar" style="width: 20%"></div></div>
                             </li>
                     <li><h3>jQuery</h3>
-                        <div class="progress"><div class="progressBar"></div></div>
+                        <div class="progress"><div class="progressBar"style="width: 30%"></div></div>
                              </li>
                      <li><h3>Vue</h3>
-                         <div class="progress"><div class="progressBar"></div></div>
+                         <div class="progress"><div class="progressBar"style="width: 40%"></div></div>
                             </li>
                      <li><h3>Rect</h3>
-                         <div class="progress"><div class="progressBar"></div></div>
+                         <div class="progress"><div class="progressBar"style="width: 50%"></div></div>
                             </li>
                     <li><h3>HTTP</h3>
-                         <div class="progress"><div class="progressBar"></div></div>
+                         <div class="progress"><div class="progressBar"style="width: 60%"></div></div>
                             </li>
                 </ol>
         </section>
-        <section>
+        <section class="prodution">
                 <h2>作品集</h2>
                 <nav>
-                    <ol>
-                        <li>所有</li>
-                        <li>框架</li>
-                        <li>原生JS&amp;CSS</li>
+                    <ol class="clearfix">
+                        <li id="produtionAll">所有</li>
+                        <li id="produtionFrame">框架</li>
+                        <li id="produtionJs">原生JS&amp;CSS</li>
                     </ol>
+                    <div id="produtionBar" class="bar status-1">
+                        <div class="bar-inner"></div>
+                    </div>
+                  <script>
+                      produtionAll.onclick=function () {
+                     produtionBar.className="bar status-1";   
+                      }
+                      produtionFrame.onclick=function () {
+                     produtionBar.className="bar status-2";   
+                      }
+                      produtionJs.onclick=function () {
+                     produtionBar.className="bar status-3";   
+                      }
+                  </script>
+
+    
                 </nav>
+                <div class="jobs">
+                    <div class="big"></div>
+                    <div class="small"></div>
+                    <div class="small"></div>
+                </div>
         </section>
           
     </body>

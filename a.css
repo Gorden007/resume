@@ -111,12 +111,14 @@ height: 30px;
 main{    margin-top: -340px;
 }
 .userCard{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 940px;
     /* 居中  */
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
+    box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.7);
+
 }
 .userCard .picAndText{
     padding: 50px;
@@ -204,7 +206,7 @@ main .downloadResume {
 }
 main a.downloadResume:hover{
     transition: box-shadow 0.3s;
-    box-shadow: 1px 4px 13px 0px rgba(0,0,0,1);
+    box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.7);
     /* -webkit-box-shadow: 1px 4px 13px 0px rgba(0,0,0,1);
      -moz-box-shadow: 1px 4px 13px 0px rgba(0,0,0,1); */
 
@@ -219,25 +221,28 @@ font-family: kai;
 /* font-weight: bold; */
     line-height: 1.8;
 }
- .skills{
+section.skills,
+section.prodution{
      margin-top: 60px;
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
 }
-.skills  h2{text-align: center;
+section.skills h2,
+section.prodution h2{
+    text-align: center;
     font-size: 34px;
     font-weight: 600;
     line-height: 1.2;
     color: #3d4451;
-    margin-bottom: 10px;}  
-.skills ol{
+    margin-bottom: 30px;}  
+section.skills ol{
     padding: 50px 43px 20px;
     background: white;
     box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.5);
 }
 
-.skills ol li{
+section.skills ol li{
     /* padding-right: 50px; */
     /* box-sizing: border-box; */
     float: left;
@@ -266,3 +271,50 @@ font-family: kai;
     width: 20%;
     background: #e6686a;
 }
+section.prodution{
+    text-align: center;
+}
+section.prodution nav{
+    /* text-align: center; */
+    display: inline-block;
+    vertical-align: top;
+    /* 为了让nav的div.bar变小 */
+}
+section.prodution nav ol{
+    display: inline-block;
+    vertical-align: top;
+    /* ol写成inline为了缩小成小块 不占一行, 写inline必加vertical-aligin: top */
+
+}
+section.prodution nav ol li{
+    float:left;
+    margin-left: 40px;
+}
+section.prodution nav ol li:first-child{
+    margin-left: 0px;
+}
+section.prodution  nav .bar{
+    margin-top: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #FFFFFF;
+}
+section.prodution  nav .bar-inner{
+height: 100%;
+width: 15%;
+background: #e06567;
+}
+section.prodution  nav .bar.status-1 .bar-inner{
+    width: 15%;
+    }
+section.prodution  nav .bar.status-2 .bar-inner{
+    width: 15%;    
+    margin-left: 73px;
+}
+ section.prodution  nav .bar.status-3 .bar-inner{        height: 100%;
+        width: 38%;
+        margin-left: 145px;
+
+        
+} 
+section.prodution {margin-bottom: 500px;}
