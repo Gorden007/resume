@@ -8,7 +8,10 @@ body{background-color: #efefef;
 margin: 0px;}
 *{padding: 0px;
  margin: 0px;}
-
+ ol,ul{list-style: none;}
+h1,h2,h3,h4,h5,h6{
+    
+}
 
 .topNavBar{
     padding-top: 20px; 
@@ -16,6 +19,7 @@ margin: 0px;}
     /* padding-left: 16px; */
     /* padding-right: 16px; */
     position: fixed;
+    /* 相对定位position: fixed;导致自身缩小 所以加width 100%   */
     top: 0px;
     left: 0px;
     width: 100%;
@@ -23,6 +27,7 @@ margin: 0px;}
 }
 .topNavBar .topNavBar-inner{
  padding: 0px 16px;
+ /* 上一级topNavBar 宽度100%,想做左右边距只能在此加一层 */
 
 }
 .topNavBar nav{
@@ -103,6 +108,8 @@ height: 30px;
     height: 515px;
     background-color: rgba(0, 0, 0, 0.8);
 }
+main{    margin-top: -340px;
+}
 .userCard{
     border: 1px solid red;
     max-width: 940px;
@@ -165,7 +172,7 @@ footer.media{
     width: 30px;
     height: 30px;
     fill: white;
-    margin: 0px 16px;
+    margin: 0px 6px;
 }
 .userCard a{
     display: inline-block;
@@ -176,4 +183,86 @@ footer.media{
 }
 .userCard a:hover{
   background-color: #cf5d5f
+}
+main .downloadResume-wrapper{
+     text-align: center;   
+
+
+/* 父元素加center为居中,因为子元素为内联元素，对其没有作用*/}  
+main .downloadResume {
+    font-size: 14px;
+    padding: 21px 55px;
+    line-height: 16px;
+    border: 1px solid #cdcfd1;
+    background: #efefef;
+    color: #3d4451;
+    font-weight: bold;
+    display: inline-block;
+    /* 内联元素只对padding宽有作用，所以改成inline-block */
+    border-radius: 2px;
+    margin: 32px;
+}
+main a.downloadResume:hover{
+    transition: box-shadow 0.3s;
+    box-shadow: 1px 4px 13px 0px rgba(0,0,0,1);
+    /* -webkit-box-shadow: 1px 4px 13px 0px rgba(0,0,0,1);
+     -moz-box-shadow: 1px 4px 13px 0px rgba(0,0,0,1); */
+
+}
+main p.describe{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+font-size: 17px;
+font-family: kai;
+/* font-weight: bold; */
+    line-height: 1.8;
+}
+ .skills{
+     margin-top: 60px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills  h2{text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3d4451;
+    margin-bottom: 10px;}  
+.skills ol{
+    padding: 50px 43px 20px;
+    background: white;
+    box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.5);
+}
+
+.skills ol li{
+    /* padding-right: 50px; */
+    /* box-sizing: border-box; */
+    float: left;
+    width: 48%;
+}
+.skills ol li:nth-child(even){
+    float: right;
+
+}
+
+    .skills ol li h3{
+        padding-right: 40px; 
+        line-height: 1.1;
+        font-size: 14px;
+    }
+.skills ol li .progress{
+    height: 5px;
+    border-radius: 3px ;
+    background: #fae1e1 ; 
+    margin: 4px 0px 40px ;
+}
+.skills ol li .progress .progressBar{
+
+    border-radius: 3px ;
+    height: 100%;
+    width: 20%;
+    background: #e6686a;
 }
