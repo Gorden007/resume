@@ -303,6 +303,8 @@ section.prodution  nav .bar-inner{
 height: 100%;
 width: 15%;
 background: #e06567;
+border-radius: 2px;
+
 }
 section.prodution  nav .bar.status-1 .bar-inner{
     width: 15%;
